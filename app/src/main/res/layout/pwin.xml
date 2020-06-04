@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00FFFFFF"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_round12"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_selectphone_photo"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:text="拍照"
+            android:textColor="#FF384359"
+            android:textSize="18sp"
+            android:background="#00FFFFFF"
+            />
+        <Button
+            android:id="@+id/bt_selectphone_image"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:text="从手机相册选择"
+            android:textColor="#FF384359"
+            android:textSize="18sp"
+            android:background="#00FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/bt_selectphone_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="取消"
+        android:textColor="#FFFF3A1E"
+        android:textSize="18sp"
+        android:background="@drawable/bg_white_round12"
+        android:layout_marginTop="20dip"
+        />
+
+</LinearLayout>

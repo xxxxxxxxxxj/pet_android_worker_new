@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item_ordertag"
+    android:layout_width="wrap_content"
+    android:layout_height="19dip"
+    android:background="@drawable/bg_round_df"
+    android:gravity="center"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:text="TextView"
+    android:textColor="@color/aFF3A1E"
+    android:textSize="11sp">
+
+</TextView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".WorkTimeActivity">
+
+    <include layout="@layout/titlebarwhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_95"
+        android:background="@color/aF6F8FA"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吃饭时间段"
+            android:textColor="@color/a717985"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_eattime_intr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00-13:00"
+            android:textColor="@color/a002241"
+            android:textSize="@dimen/sp_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_topleftround20"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="触发规则"
+                    android:textColor="@color/a002241"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/tv_eattime_intr_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="触发规则"
+                    android:textColor="@color/a384359"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_eattime_intr_example"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:text="触发规则"
+                    android:textColor="@color/a384359"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_eattime_intr_zhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="触发规则"
+                    android:textColor="@color/aFF3A1E"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

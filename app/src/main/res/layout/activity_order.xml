@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a002241"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebaraphl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_order_jrddnum"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_order_wksnum"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/stl_order"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        tl:tl_divider_color="@color/transparent"
+        tl:tl_divider_width="0dp"
+        tl:tl_indicator_color="@color/white"
+        tl:tl_indicator_corner_radius="1.5dip"
+        tl:tl_indicator_height="3dip"
+        tl:tl_indicator_width="20dip"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textBold="SELECT"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="15sp"
+        tl:tl_underline_color="@color/transparent"
+        tl:tl_underline_height="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_order_list_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bg_white_topround20"
+        android:paddingTop="20dip">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

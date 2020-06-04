@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_addpetarchives_tag"
+        android:layout_width="match_parent"
+        android:layout_height="28.5dip"
+        android:background="@drawable/bg_round_bbbborder"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/a333333"
+        android:textSize="12sp" />
+
+</LinearLayout>

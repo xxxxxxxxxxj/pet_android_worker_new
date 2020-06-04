@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:layout_marginBottom="20dip"
+    android:paddingRight="20dip">
+
+    <TextView
+        android:id="@+id/tv_item_update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/a384359"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_item_update_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_update_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="TextView"
+                android:textColor="@color/a717985"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_item_update_add"
+                android:layout_width="14dip"
+                android:layout_height="14dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_service_add" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/ll_item_update_price"
+            android:text="TextView"
+            android:textColor="@color/a717985"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

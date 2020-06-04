@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SuperTextView-->
+    <declare-styleable name="SuperTextView">
+        <attr name="corner" format="dimension"/>
+        <attr name="left_top_corner" format="boolean"/>
+        <attr name="right_top_corner" format="boolean"/>
+        <attr name="left_bottom_corner" format="boolean"/>
+        <attr name="right_bottom_corner" format="boolean"/>
+        <attr name="solid" format="reference|color"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="stroke_color" format="reference|color"/>
+        <attr name="state_drawable" format="reference"/>
+        <attr name="state_drawable_width" format="dimension"/>
+        <attr name="state_drawable_height" format="dimension"/>
+        <attr name="state_drawable_padding_left" format="dimension"/>
+        <attr name="state_drawable_padding_top" format="dimension"/>
+        <attr name="isShowState" format="boolean"/>
+        <attr name="text_stroke" format="boolean"/>
+        <attr name="text_stroke_color" format="reference|color"/>
+        <attr name="text_stroke_width" format="dimension"/>
+        <attr name="text_fill_color" format="reference|color"/>
+        <attr name="autoAdjust" format="boolean"/>
+        <attr name="state_drawable_mode" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="fill" value="5"/>
+            <enum name="leftTop" value="6"/>
+            <enum name="rightTop" value="7"/>
+            <enum name="leftBottom" value="8"/>
+            <enum name="rightBottom" value="9"/>
+        </attr>
+        <attr name="shaderStartColor" format="reference|color"/>
+        <attr name="shaderEndColor" format="reference|color"/>
+        <attr name="shaderMode" format="enum">
+            <enum name="topToBottom" value="0"/>
+            <enum name="bottomToTop" value="1"/>
+            <enum name="leftTopRight" value="2"/>
+            <enum name="rightToLeft" value="3"/>
+        </attr>
+        <attr name="shaderEnable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowLayout">
+        <!--阴影的圆角大小-->
+        <attr name="hl_cornerRadius" format="dimension" />
+        <!--阴影的扩散范围(也可以理解为扩散程度)-->
+        <attr name="hl_shadowLimit" format="dimension" />
+        <attr name="hl_shadowColor" format="color" />
+        <attr name="hl_shadowBackColor" format="color" />
+        <!--x轴的偏移量-->
+        <attr name="hl_dx" format="dimension" />
+        <!--y轴的偏移量-->
+        <attr name="hl_dy" format="dimension" />
+        <!--左边是否显示阴影-->
+        <attr name="hl_leftShow" format="boolean" />
+        <!--右边是否显示阴影-->
+        <attr name="hl_rightShow" format="boolean" />
+        <!--上边是否显示阴影-->
+        <attr name="hl_topShow" format="boolean" />
+        <!--下面是否显示阴影-->
+        <attr name="hl_bottomShow" format="boolean" />
+
+    </declare-styleable>
+    <declare-styleable name="NiceImageView">
+        <attr name="is_circle" format="boolean" />
+        <attr name="is_cover_src" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_top_left_radius" format="dimension" />
+        <attr name="corner_top_right_radius" format="dimension" />
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <attr name="nice_border_width" format="dimension" />
+        <attr name="nice_border_color" format="color" />
+        <attr name="inner_border_width" format="dimension" />
+        <attr name="inner_border_color" format="color" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ShadowContainer">
+        <attr name="containerShadowColor" format="color"/>
+        <attr name="containerShadowRadius" format="dimension"/>
+        <attr name="containerDeltaLength" format="dimension"/>
+        <attr name="containerCornerRadius" format="dimension"/>
+        <attr name="deltaX" format="dimension"/>
+        <attr name="deltaY" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CustomChartView">
+
+        <!--底部文字颜色 -->
+        <attr name="text_color" format="color" />
+        <!--底部文字大小 -->
+        <attr name="text_size" format="dimension" />
+        <!--底部文字后缀 当然你可以定义前缀-->
+        <attr name="text_suffix" format="string" />
+
+        <!--chartView开始显示的颜色-->
+        <attr name="chart_start_color" format="color" />
+        <!--chartView结束显示的颜色-->
+        <attr name="chart_end_color" format="color" />
+        <!--chartView选中的颜色-->
+        <attr name="chart_choose_color" format="color" />
+        <!--chartView的圆角大小-->
+        <attr name="chart_view_circle_radius" format="integer" />
+
+        <!--顶部文字的颜色-->
+        <attr name="text_top_color" format="color" />
+        <!--顶部文字大小-->
+        <attr name="text_top_size" format="dimension" />
+        <!--顶部文字显示方式 百分比还是数值-->
+        <attr name="text_top_type" format="enum">
+            <enum name="percent" value="1" />
+            <enum name="value" value="2" />
+        </attr>
+
+        <!--显示chartView的个数-->
+        <attr name="chart_item_count" format="integer" />
+        <!--最大值-->
+        <attr name="chart_max_value" format="integer" />
+        <!--最小值-->
+        <attr name="chart_min_value" format="integer" />
+
+        <!--chartView显示图与View顶部的距离-->
+        <attr name="chart_padding_top" format="dimension" />
+        <!--chartView显示图与View底部的距离-->
+        <attr name="chart_padding_bottom" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="VerticalBannerView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries" />
+        <attr name="dividerThickness" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="SideBar">
+        <attr name="textsize" format="dimension" />
+        <attr name="textcolor" format="color" />
+        <attr name="textselectorcolor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PullToZoomScrollView">
+        <attr name="scrollHeadView" format="reference" />
+        <attr name="scrollContentView" format="reference" />
+        <attr name="scrollZoomView" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PullToZoomListView">
+        <attr name="listHeadView" format="reference" />
+        <attr name="isHeadParallax" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FluidLayout">
+        <attr name="gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FluidLayout_Layout">
+        <attr name="layout_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+</resources>

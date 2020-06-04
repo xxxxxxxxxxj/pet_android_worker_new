@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_round20"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:background="@drawable/bg_income_topradius"
+        android:gravity="center"
+        android:text="标签"
+        android:textColor="@color/a384359"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="15dip"
+        android:background="@color/alertdialog_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_usertag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:text="用户标签"
+            android:textColor="@color/a717985"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_usertag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/a384359"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pettag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:text="宠物标签"
+            android:textColor="@color/a717985"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pettag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/a384359"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DFE0E2" />
+
+    <TextView
+        android:id="@+id/btn_pos"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/aFF3A1E"
+        android:textSize="15sp"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="crop__saving" translatable="false">保存照片中…</string>
+    <string name="crop__wait" translatable="false">请稍后…</string>
+    <string name="crop__pick_error" translatable="false">No image sources available</string>
+    <string name="crop__done" translatable="false">确认</string>
+    <string name="crop__cancel" translatable="false">取消</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="app_name">美容师端-宠物家</string>
+    <string name="title_activity_rob_order_detail">RobOrderDetailActivity</string>
+    <string name="title_activity_month_in_come">MonthInComeActivity</string>
+    <string name="title_activity_old_month_in_come">OldMonthInComeActivity</string>
+    <string name="title_activity_service_time_choose_pet">ServiceTimeChoosePetActivity</string>
+    <string name="title_activity_adjustment_service_time">AdjustmentServiceTimeActivity</string>
+    <string name="all_pic">全部图片</string>
+    <string name="preview_without_num">预览</string>
+    <string name="preview_with_num">预览(%1$d)</string>
+    <string name="choose_pic_finish">完成</string>
+    <string name="choose_pic_finish_with_num">完成(%1$d/%2$d)</string>
+    <string name="choose_pic_num_out_of_index">你最多只能选择%1$d张照片</string>
+    <string name="choose_pic">选择</string>
+    <string name="not_choose_any_pick">你还没有选择任何图片</string>
+    <string name="current_push_money_rate">当前提成比例%1$s</string>
+    <string name="push_money_rate">提成比例\n%1$s</string>
+    <string name="rsa">MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCkw4xchex11xcYR2N5WXrVTY8yA2yuG6lz1RzMSNOF8CPa5PQkgVd2kW9DEMXdTTkRuLoa29bp0leX8c0KYdHhSQqVA7jvfDenFyVWNfuv4NETjIzcG7JEGi3d6oyQRLeBkqoPM0uXOI+eSQzlrGK8PO4CrV1bH3oUYrffL/sGAJIFSfKQ7erpH2cF7b8bKR7yFLgrzlXVPYiX6MT75bJ3nZ+tEwA9rSVA/WYiga+zhQsTgq5/Ot/xMQr70ERUxPKM2MHEfp/rSZNk2m6oZlLeLLN5fwHDl28IUggJlzGzUlP+JR+Boo5Bp3aMu6qz09J47VeMqvM4WHkhB6Go6xrRAgMBAAECggEAYAML0gbAqlKyxJUlJFu+NnpBzZUtSbAY6MTxSSHPESfE3RO6KWOtwgwx19T4WGNdtDP/TxN4gzztij9/imNCWJOltPw8UmICVD4qpbhDeFP7wfaPRtxk30aaH81EJ/XDMaBztPPhQrfVCRnsiBISXzrqP2kjE6yeCS8Vktt03iObPvSH2pa2TEyBttfV+Lzkp85wLqVXX+H29McaYsUSeDI5EvsnAltbuYhHQMVoWnzi43eOtFkJqfLdPT/vQfrs4qj1+97qeyA6ni/6vjLiLsE8HICufccXsBbwTs8ZUEQSVAHZHrbB0IyP4J1VdSp0Mo3l2MLLt950DdKcHKidIQKBgQDYutCPbO1cncEDCepuGySi1meTDkoE9TwxMl+e8sCj0ibNqim9p61fOki3oS+JpQIuKSyxBDH15FMC4Y2asjrOjRB40ATSucAMaZYQf3MloA2XJf0OXIenmFdtwPhfeHhVKPqFNSg7aAFsTQLTqAUbk6X1wFVWHW3MP8iTjbd2FQKBgQDCnkD65Xuwoq5LSzIWNUNP+20PrygQiq0kWj83bMzOa4QVnPBMdN5q0JVHLE4NVeSumz9AVxfjsFueAGeN6Rj7kUW6CNWfD5moPZli9VY49mZcdyMeb1KrHVl6l5APRk4Q9Tvjxt4zG57FUUNiRVYExKIMa5MGvr6s2eiOSspczQKBgQClz+eYk6HV5euxQ3jT3HhfDOIZJCmFOYpfqUZ2+QphS3rchn+A1jRSUukndG5GRLQyVNYYaDlBAvpvjdkkrY9IT6x2gc/u2KYR2QYygQ+7jYRYS3wb7LbshiT9l1Fu2WBW5w8jstOg/6V3EkRDYpzlyESEjC29wK4sQfBW02m1MQKBgQCGLlg84/XIzhD/hqPM3gI/5ejG1Iv6A7LminZlf1UhyM0znZWsETO8T31sqeZSmXLm09DjSmkFKfWw1TSQijMYV4vMfQTT+wyFC5tyuBYvhesDO3zyIezMX5ruxAqmDWILnRkirV1LvXJVNvcPjSCGfw//IjgngWGziTYmzPgCzQKBgQDHBu7EtwNJbBGDmv8L0/kEi16G08OZn3E7zJmhVY1hOre20Q870MYhT2tj1MX8yZPlsf8/7uyOQtBsIUIDJdB8GSBQ7rM3W+2femPHQgQEX1GFAnrjbnnxX03DDi7xkc1iQaNlqTQmX+8oFDUOyhOHMGZu6fxYRCeT5INF1ppZww==</string>
+</resources>

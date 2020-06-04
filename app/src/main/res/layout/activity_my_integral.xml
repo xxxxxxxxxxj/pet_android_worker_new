@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_icon_dog"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include layout="@layout/titlebaraphl"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_totalintegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21.5dp"
+                />
+            <TextView
+                android:id="@+id/tv_integral_detail"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_white_round12"
+                android:text="积分明细"
+                android:textColor="#FF002241"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分规则"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:text="·每月1日，获得100基础积分，月末100积分基础清零"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="·每月获得积分自动存入积分账户，可用于积分商城兑换商品"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_integral_rule"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_height="315dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分商城搭建中，敬请期待～"
+                android:textColor="#FFFFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

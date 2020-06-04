@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一步："
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp_100"
+        android:textSize="@dimen/sp_18" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginTop="@dimen/dp_96"
+        android:layout_marginLeft="@dimen/dp_130"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:scaleType="fitXY"
+        android:src="@drawable/eattime_shou" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击时间格子进行开启与关闭操作"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp_90"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

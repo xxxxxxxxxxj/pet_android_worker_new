@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include layout="@layout/titlebarwhite"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_service_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include
+        android:id="@+id/ll_serviceorder_default"
+        layout="@layout/recycler_emptyview"
+        android:visibility="gone"/>
+
+</LinearLayout>

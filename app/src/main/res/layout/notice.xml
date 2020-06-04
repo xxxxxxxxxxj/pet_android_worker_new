@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/af8f8f8"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebarwhite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/white" />
+
+
+    <com.haotang.petworker.pulltorefresh.PullToRefreshListView
+        android:id="@+id/listView_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        android:divider="@null" />
+
+    <include
+        android:id="@+id/rl_null"
+        layout="@layout/nullhint"
+        android:visibility="gone" />
+
+
+</LinearLayout>

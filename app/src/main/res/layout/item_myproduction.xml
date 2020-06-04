@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="17.5dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="167.5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_production_icon"
+            android:layout_width="167.5dp"
+            android:layout_height="167.5dp" />
+        <TextView
+            android:layout_below="@+id/iv_production_icon"
+            android:id="@+id/tv_production_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF384359"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:layout_below="@+id/tv_production_name"
+            android:id="@+id/tv_production_data"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF717985"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_production_audit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:gravity="center"
+            android:text="待审核"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_8"
+            android:background="#66000000"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/flash_1"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_2"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_3"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_4"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_5"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_6"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_7"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_8"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_9"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_10"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_11"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_12"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_13"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_14"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_15"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_16"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_17"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_18"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="30" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="30" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="30" />
+    <item
+        android:drawable="@drawable/flash_19"
+        android:duration="30" />
+    <item
+        android:drawable="@drawable/flash_20"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_21"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_22"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_23"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_24"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_25"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_26"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_27"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_28"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_29"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_30"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_31"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_32"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_33"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_34"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_35"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_36"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_37"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_39"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_40"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_41"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_42"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_43"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_44"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_45"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_46"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_47"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_48"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_49"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_50"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_51"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_52"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_53"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_54"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_55"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_56"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_57"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_58"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_59"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_60"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_61"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_62"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/flash_63"
+        android:duration="20" />
+</animation-list>

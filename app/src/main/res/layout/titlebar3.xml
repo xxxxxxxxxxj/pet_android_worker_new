@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/a3a3636"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip" >
+
+    <ImageButton
+        android:id="@+id/ib_titlebar_back"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_back" />
+
+    <Button
+        android:id="@+id/bt_titlebar_other"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_del"
+        android:paddingLeft="5dip"
+        android:paddingRight="15dip"
+        android:textColor="@color/TitleName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@id/bt_titlebar_other"
+        android:layout_toRightOf="@id/ib_titlebar_back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TITLE_SIZE" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_income_month_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_income_month_bottom"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/ll_income_month_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="267dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pet_data_setback"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingTop="15dip"
+            android:paddingRight="20dip"
+            android:paddingBottom="20dip">
+
+            <TextView
+                android:id="@+id/tv_income_month_wc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="完成"
+                android:textColor="@color/a002241"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询月份"
+                android:textColor="@color/a002241"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/wlv_income_month"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

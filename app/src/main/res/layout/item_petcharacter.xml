@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dip"
+    android:layout_marginBottom="10dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_petcharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:background="@drawable/bg_bbbbbb_round_white"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="TextView"
+        android:textColor="@color/a333333"
+        android:textSize="12sp" />
+
+</LinearLayout>

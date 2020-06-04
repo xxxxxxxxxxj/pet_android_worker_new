@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:text="第二步："
+        android:layout_marginLeft="@dimen/dp_200"
+        android:layout_marginTop="@dimen/dp_50"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_110"
+        android:text="点击保存，完成对时间格子修改"
+        android:layout_marginBottom="@dimen/dp_250"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/iv_guide_eattime2"
+        android:layout_width="@dimen/dp_251"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_height="@dimen/dp_48"
+        android:scaleType="fitXY"
+        android:src="@drawable/eattime_know" />
+</LinearLayout>

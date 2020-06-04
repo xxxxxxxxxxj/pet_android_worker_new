@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_orderdetail_title"
+        layout="@layout/titlebarwhite" />
+
+    <ImageView
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="60dip"
+        android:layout_marginBottom="15dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_service_complete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:text="订单服务完成"
+        android:textColor="@color/a002241"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_service_complete_next"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:layout_marginBottom="40dip"
+        android:background="@drawable/bg_round_border717985"
+        android:gravity="center"
+        android:text="继续下一单"
+        android:textColor="@color/a717985"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_service_complete_hljl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/bg_round_f6f8fa"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dip"
+            android:text="完善护理记录"
+            android:textColor="@color/a002241"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.haotang.petworker.view.NiceImageView
+                android:id="@+id/iv_service_complete_petimg"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                app:corner_radius="@dimen/dp_25"
+                android:src="@drawable/icon_production_default" />
+
+            <TextView
+                android:id="@+id/iv_service_complete_qtx"
+                android:layout_width="65dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_round_red"
+                android:gravity="center"
+                android:text="去填写"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/iv_service_complete_qtx"
+                android:layout_toRightOf="@id/iv_service_complete_petimg"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_service_complete_petname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="TextView"
+                    android:textColor="@color/a002241"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_service_complete_hdjf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/a717985"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

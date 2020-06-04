@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_photobottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            rv:rv_backgroundColor="@color/white"
+            rv:rv_cornerRadius="10dip">
+
+            <TextView
+                android:id="@+id/tv_photo_bottomdia_camer"
+                android:layout_width="match_parent"
+                android:layout_height="57dip"
+                android:gravity="center"
+                android:text="拍照"
+                android:textColor="@color/a333333"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/aEEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_photo_bottomdia_picture"
+                android:layout_width="match_parent"
+                android:layout_height="57dip"
+                android:gravity="center"
+                android:text="从手机相册选择"
+                android:textColor="@color/a333333"
+                android:textSize="18sp" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_photo_bottomdia_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="57dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/a0374f1"
+            android:textSize="18sp"
+            rv:rv_backgroundColor="@color/white"
+            rv:rv_cornerRadius="10dip" />
+    </LinearLayout>
+</RelativeLayout>

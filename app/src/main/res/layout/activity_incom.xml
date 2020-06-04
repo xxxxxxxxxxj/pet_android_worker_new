@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aF0F5F9">
+
+    <RelativeLayout
+        android:id="@+id/rl_commodity_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/rl_income_title"
+        layout="@layout/titlebaraphl" />
+
+    <com.haotang.petworker.view.ObservableScrollView
+        android:id="@+id/osv_income"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="351dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_income_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="84dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_income_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_income_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.5dip"
+                        android:text="¥0"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_income_jzrq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dip"
+                        android:text="本月截止至..."
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/bg_white_topround20"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dip"
+                        android:background="@drawable/bg_income_topradius"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/red_point" />
+
+                        <TextView
+                            android:id="@+id/tv_income_monthdesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="因结算周期原因，请在当月第一周结束后查看上月奖励"
+                            android:textColor="#717985"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/grv_income"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:minHeight="@dimen/dp_40"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingBottom="5dip" />
+                    <RelativeLayout
+                        android:id="@+id/rl_empty"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:id="@+id/iv_emptyview_img"
+                            android:layout_width="@dimen/dp_46"
+                            android:layout_height="@dimen/dp_46"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icon_noproduction" />
+                        <TextView
+                            android:id="@+id/tv_emptyview_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_emptyview_img"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:textColor="@color/a717985"
+                            android:textSize="14sp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.haotang.petworker.view.ObservableScrollView>
+</RelativeLayout>

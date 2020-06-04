@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_dog">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/sl_mainfragment_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nv_mainfragmnet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_mainfragment_notic"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginRight="27dp"
+                    android:src="@drawable/icon_main_notic" />
+
+                <TextView
+                    android:id="@+id/tv_mainfragemnt_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46.5dp"
+                    android:layout_below="@+id/iv_mainfragment_notic"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="05-07"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/tv_mainfragment_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_mainfragemnt_day"
+                    android:layout_toRightOf="@+id/tv_mainfragemnt_day"
+                    android:text="/2019"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_mainfragment_hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mainfragemnt_day"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12.5dp"
+                    android:text="早上好！李皮皮"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_mainfragment_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mainfragment_hello"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/icon_advanced_beautician" />
+
+                <ImageView
+                    android:id="@+id/iv_mainfragment_ncp"
+                    android:layout_width="160dip"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/iv_mainfragment_level"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_mainfragment_allinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="294dp"
+                    android:layout_below="@+id/iv_mainfragment_ncp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_white_round25"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/bg_gray_topround"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_mainfragment_mywork"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_mainfragment_mywork"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="我的工作"
+                                android:textColor="#FF002241"
+                                android:textSize="18sp" />
+
+                            <View
+                                android:id="@+id/v_work_line"
+                                android:layout_width="20dp"
+                                android:layout_height="3dp"
+                                android:layout_below="@+id/tv_mainfragment_mywork"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4.5dp"
+                                android:background="#FF3A1E" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_mainfragment_mymoney"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_mainfragment_mymoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="总收入"
+                                android:textColor="#FF717985"
+                                android:textSize="17sp" />
+
+                            <View
+                                android:id="@+id/v_money_line"
+                                android:layout_width="20dp"
+                                android:layout_height="3dp"
+                                android:layout_below="@+id/tv_mainfragment_mymoney"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4.5dp"
+                                android:background="#FF3A1E"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mainfragment_mywork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mainfragment_todayorder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_mainfragment_waitservice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="24dp"
+                                    android:text="0"
+                                    android:textColor="#FFFF3A1E"
+                                    android:textSize="35sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_mainfragment_waitservice"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:text="今日订单"
+                                    android:textColor="#FF717985"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mainfragment_waitwrite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_mainfragment_waitwrite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="24dp"
+                                    android:text="0"
+                                    android:textColor="#FF002241"
+                                    android:textSize="35sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_mainfragment_waitwrite"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:text="待填写记录"
+                                    android:textColor="#FF717985"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_mainfragment_myfans"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_mainfragment_myfans"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="24dp"
+                                    android:text="0"
+                                    android:textColor="#FF002241"
+                                    android:textSize="35sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_mainfragment_myfans"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="6dp"
+                                    android:text="我的粉丝"
+                                    android:textColor="#FF717985"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_mainfragment_integral"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_mainfragment_integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="24dp"
+                                android:text="---"
+                                android:textColor="#FF002241"
+                                android:textSize="35sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_mainfragment_integral"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:text="我的积分"
+                                android:textColor="#FF717985"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_mainfragment_moneyinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_mainfragment_totalmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="34dp"
+                            android:textColor="#FF384359"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_mainfragment_see"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="36dp"
+                            android:layout_marginTop="44dp"
+                            android:layout_marginRight="49dp"
+                            android:src="@drawable/icon_notsee" />
+
+                        <TextView
+                            android:id="@+id/tv_mainfragment_moneytime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_mainfragment_totalmoney"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="17dp"
+                            android:text="本月截止至"
+                            android:textColor="#FF717985"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btn_mainfragment_income"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
+                            android:layout_below="@+id/tv_mainfragment_moneytime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="39dp"
+                            android:layout_marginTop="34dp"
+                            android:layout_marginRight="39dp"
+                            android:background="@drawable/bg_nextbtn_blue"
+                            android:text="查看收入明细"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mainfragment_slidtoorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/ll_mainfragment_allinfo"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageView
+                        android:id="@+id/iv_mainfragment_slidtoorder"
+                        android:layout_width="7dip"
+                        android:layout_height="11dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:layout_toLeftOf="@id/tv_mainfragment_slidtoorder"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_mainshan" />
+
+                    <ImageView
+                        android:id="@+id/iv_mainfragment_slidtoorder1"
+                        android:layout_width="7dip"
+                        android:layout_height="11dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dip"
+                        android:layout_toLeftOf="@id/iv_mainfragment_slidtoorder"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_mainshan" />
+
+                    <TextView
+                        android:id="@+id/tv_mainfragment_slidtoorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="滑动显示订单"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</RelativeLayout>

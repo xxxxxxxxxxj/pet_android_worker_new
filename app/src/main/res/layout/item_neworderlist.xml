@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haotang.petworker.view.ShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_neworder_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hl_cornerRadius="20dp"
+    app:hl_dx="0dp"
+    app:hl_dy="0dp"
+    app:hl_shadowColor="@color/default_shadow_color"
+    app:hl_shadowLimit="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:paddingRight="15dip">
+
+            <TextView
+                android:id="@+id/tv_neworder_statedesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="TextView"
+                android:textColor="@color/a717985"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_neworder_isvip"
+                android:layout_width="40dip"
+                android:layout_height="43.5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_vip_new" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/tv_neworder_statedesc"
+                android:layout_toRightOf="@id/iv_neworder_isvip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/vw_neworder_username"
+                    android:layout_width="15dip"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_neworder_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="TextView"
+                    android:textColor="@color/a002241"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_neworder_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="TextView"
+                    android:textColor="@color/a002241"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginBottom="12.5dip"
+            android:background="#DFE0E2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.5dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip">
+
+            <com.haotang.petworker.view.NiceImageView
+                android:id="@+id/iv_neworder_petimg"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_production_default"
+                app:corner_radius="@dimen/dp_25" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_neworder_servicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.5dip"
+                    android:layout_marginBottom="5dip"
+                    android:text="TextView"
+                    android:textColor="@color/a384359"
+                    android:textSize="15sp" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tfl_neworder_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_neworder_shichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="TextView"
+            android:textColor="@color/a717985"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_neworder_djs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.5dip"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip">
+
+            <com.haotang.petworker.view.TimeTextView
+                android:id="@+id/ttv_neworder_djs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倒计时"
+                android:textColor="@color/a717985"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_neworder_shichang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/a717985"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_neworder_hljl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.5dip"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginBottom="12.5dip"
+                android:background="#DFE0E2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <TextView
+                    android:id="@+id/tv_neworder_hljl"
+                    android:layout_width="72dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_round_red"
+                    android:gravity="center"
+                    android:text="护理记录"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_neworder_hljldesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@id/tv_neworder_hljl"
+                    android:text="TextView"
+                    android:textColor="@color/a717985"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.haotang.petworker.view.ShadowLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    android:orientation="vertical"
+    tools:context="com.haotang.petworker.TestActivity">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" />
+
+    <com.haotang.petworker.view.CustomChartView
+        android:id="@+id/chart_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        app:chart_end_color="#6BD8F7"
+        app:chart_padding_bottom="-1dp"
+        app:chart_padding_top="0dip"
+        app:chart_start_color="#39AFEC"
+        app:chart_view_circle_radius="50"
+        app:text_color="@color/a666666"
+        app:text_size="12sp"
+        app:text_top_color="@color/a666666"
+        app:text_top_size="12sp" />
+
+</LinearLayout>

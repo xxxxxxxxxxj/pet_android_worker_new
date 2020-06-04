@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <include layout="@layout/titlebarwhite" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_servicetimecp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/af8f8f8"
+            android:dividerHeight="0.5dip"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:showDividers="none" />
+
+        <TextView
+            android:id="@+id/tv_choosepet_hint"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_orange_normal_dog"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+        <com.haotang.petworker.view.SideBar
+            android:id="@+id/sb_choosepet_sidebar"
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+</LinearLayout>

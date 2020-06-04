@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haotang.petworker.view.SolveClickTouchConflictLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_popred_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginRight="@dimen/dp_15">
+
+    <RelativeLayout
+        android:id="@+id/rl_popred_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:background="@drawable/bg_white_round20">
+
+        <ImageView
+            android:id="@+id/iv_redpocket_icon"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/icon_redpocket" />
+
+        <TextView
+            android:id="@+id/tv_redpocket_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_toRightOf="@+id/iv_redpocket_icon"
+            android:text="收到打赏红包啦~"
+            android:textColor="#FF384359"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_redpocket_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toRightOf="@+id/iv_redpocket_icon"
+            android:text="点击查看 >"
+            android:textColor="#FF717985"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</com.haotang.petworker.view.SolveClickTouchConflictLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="content_text_color">#717985</color>
+    <!--ptrecyleview-->
+    <color name="graylight">#ddd</color>
+    <color name="gray">#aaa</color>
+    <color name="graydark">#777</color>
+    <color name="graydarker">#555</color>
+    <color name="bt_1">#19000000</color>
+    <color name="bt_2">#3c000000</color>
+    <color name="bt_3">#4c000000</color>
+    <color name="bt_4">#66000000</color>
+    <color name="bt_5">#7f000000</color>
+    <color name="bt_6">#99000000</color>
+    <color name="bt_7">#b2000000</color>
+    <color name="bt_8">#cc000000</color>
+    <color name="bt_9">#e5000000</color>
+
+    <color name="wt_1">#19FFFFFF</color>
+    <color name="wt_2">#3cFFFFFF</color>
+    <color name="wt_3">#4cFFFFFF</color>
+    <color name="wt_4">#66FFFFFF</color>
+    <color name="wt_5">#7fFFFFFF</color>
+    <color name="wt_6">#99FFFFFF</color>
+    <color name="wt_7">#b2FFFFFF</color>
+    <color name="wt_8">#ccFFFFFF</color>
+    <color name="wt_9">#e5FFFFFF</color>
+    <color name="divide_color">#eeeeee</color>
+    <color name="dark_content_color">#384359</color>
+    <color name="content_hint_color">#9FA7B9</color>
+</resources>

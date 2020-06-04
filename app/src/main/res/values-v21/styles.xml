@@ -1,0 +1,7 @@
+<resources>
+    <!-- 创建一个主题样式，指定不要actionBar标题栏 -->
+    <style name="TransTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 指定透明状态为true -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

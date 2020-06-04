@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebarwhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="作品名称"
+                android:textColor="#FF384359"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="最多可填写10个字"
+                android:textColor="#FFAAB7C1"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="输入作品名称"
+            android:maxLength="10"
+            android:paddingLeft="15dip"
+            android:paddingTop="5dip"
+            android:paddingRight="8dip"
+            android:paddingBottom="5dip"
+            android:textColor="#FF717985"
+            android:textColorHint="#FFAAB7C1"
+            android:background="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/iv_add_icon"
+            android:layout_width="79.5dip"
+            android:layout_height="79.5dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/add_dog_phone"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_add_graylayer"
+        android:layout_width="match_parent"
+        android:layout_height="800dip"
+        android:background="#55000000"
+        android:visibility="gone"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/bt_add_submit"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/bg_nextbtn_blue"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="添加作品"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+</RelativeLayout>

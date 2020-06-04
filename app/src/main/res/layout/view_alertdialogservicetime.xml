@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_round20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_defaultdialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:background="@drawable/bg_income_topradius"
+        android:gravity="center"
+        android:text="服务时长"
+        android:textColor="@color/a384359"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_defaultdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#DFE0E2" />
+
+    <TextView
+        android:id="@+id/tv_defaultdialog_submit"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/aFF3A1E"
+        android:textSize="15sp" />
+</LinearLayout>

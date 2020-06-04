@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haotang.petworker.view.ShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_neworder_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hl_cornerRadius="20dp"
+    app:hl_dx="0dp"
+    app:hl_dy="0dp"
+    app:hl_shadowColor="@color/default_shadow_color"
+    app:hl_shadowLimit="10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_item_income"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_income_desc"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_13"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/icon_jiantou_right" />
+
+        <TextView
+            android:id="@+id/tv_item_income_color"
+            android:layout_width="4dip"
+            android:layout_height="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:scaleType="fitXY"
+            android:background="@drawable/bg_round2" />
+
+        <TextView
+            android:id="@+id/tv_item_income_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_item_income_color"
+            android:text="收入提成"
+            android:textColor="@color/a717985"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_income_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#384359"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_24"
+        android:textSize="@dimen/sp_30" />
+    <TextView
+        android:id="@+id/tv_income_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="包含4项：服务订单、卡销售、商品、其他提成"
+        android:textColor="#717985"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        />
+</LinearLayout>
+</com.haotang.petworker.view.ShadowLayout>

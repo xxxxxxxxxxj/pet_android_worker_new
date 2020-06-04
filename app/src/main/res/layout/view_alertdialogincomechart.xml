@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_round20"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/bg_income_topradius"
+        android:gravity="center"
+        android:text="订单提成计算规则"
+        android:textColor="@color/a002241"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="15dip"
+        android:text="(本月订单总金额 - 日底薪 - 服务成本) x 提成比例 = 实际订单提成"
+        android:textColor="@color/a999999"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_incomechart_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:text="提成比例提升到50%"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bc_incomechart"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip" />
+
+    <TextView
+        android:id="@+id/tv_incomechart_qd"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/bg_nextbtn_blue"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
